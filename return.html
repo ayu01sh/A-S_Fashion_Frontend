@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<!-- header section -->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><img src="/images/moon.png" id="icon" alt=""></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><span class="material-symbols-outlined">shopping_bag</span></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu">
+        </div>
+    </div>
+
+<!-- contact-page -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="page-col">
+                <h2>Returns and Exchange Policy</h2> <br>
+                <p style="color: black;"><b>A&S</b> returns and exchange policy gives you an option to return or exchange items purchased on <b>A&S</b> for
+                    any reason within the specified return/exchange period (check product details page for the same). Feel free to try
+                    on a product but all we ask is that the product remains unused and is preserved in its original condition along with
+                    the tags and packaging. In case a Seal Tag is received with the item, ensure that it remains attached & intact with
+                    the product to avoid any hassles in the event of a return/exchange. There are two ways to return the product to us: <br> <br>
+                    
+                    1. Pick up: In most locations, we offer a free pick up service. You will see a pickup option when you submit a return request. <br> <br>
+                    2. Self-Ship: If we don't offer a pick up at your location. In such cases, we will credit the shipping costs in the form of <b>A&S</b> credits
+                    provided the product meets the return policy and you have shared scan copy of the courier receipt with us. <br> <br>
+
+                    During Pick Up, our delivery agent may do a quality check on the return. For a successful pick up, we will initiate a doorstep refund for the return amount
+                    into the refund mode selected at the time of initiating the return request. This doorstep refund may not be applicable for some pin codes in which case refund
+                    will be initiated after the product has been received at our warehouse and has passed a quality check. If the picked up product does not pass the quality check,
+                    we shall ship it back to you. If you choose to exchange the item for reason of mismatch of size or receipt of a defective item, you will be provided with a replacement
+                    of the item, free of cost. <br> <br>
+
+                    The following EXCEPTIONS and RULES apply to this Policy: <br> <br>
+                    1. Swarovski, Precious Jewelry, Rayban Sunglasses, Socks, Briefs, Shapewear Bottoms, any Lingerie Set that includes a Brief, Swimwear, Mittens, Wrist-Bands cannot be exchanged or returned. <br><br>
+                    2. Some products like fine jewellery, watches and selected products which are susceptible to damage can only be returned/exchanged for a limited number of days. Certain products like sherwanis can only be exchanged not returned. <br><br>
+                    3. Due to the intimate nature, we handle returns for certain Innerwear, Sleepwear and Lingerie items differently. Only self-ship return is allowed for such items, hence pickup facility will not be available. Also, these items cannot be exchanged. <br><br>
+                    4. All items to be returned or exchanged must be unused and in their original condition with all original tags and packaging intact (for e.g. shoes must be packed in the original shoe box).
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer section --> 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="android">
+                    <img src="images/app-store.png" alt="ios">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png" alt="">
+                <p>Clothes mean nothing until someone lives in them</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="coupons.html">Coupons</a></li>
+                    <li><a href="blog.html">Blog Post</a></li>
+                    <li><a href="return.html">Return Policy</a></li>
+                    <li><a href="affiliate.html">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="ayush">Made with ❤️ by Ayush</p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<!-- js for dark theme -->
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")) {
+            icon.src = "images/sun.png";
+        } else {
+            icon.src = "images/moon.png";
+        }
+    }
+    //when we click on the icon it'll apply or remove the dark theme class
+</script>
+</body>
+</html>
